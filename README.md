@@ -3,7 +3,7 @@
 ## 1. Premier clone du dépot
 
 ````Bash
-![first_git_clone.png](first_git_clone.png)
+![first_git_clone.png](images/first_git_clone.png)
 ````
 
 ## 2. Création d'une branch d'innovatio
@@ -18,12 +18,12 @@ git checkout -b work
 $ npx create-docusaurus@latest mon_petit_dicosaurus classic
 ```
 
-![creat_dico.png](creat_dico.png)
+![creat_dico.png](images/creat_dico.png)
 
 ## 4. Placer le dicosaurus sur le git
 
-![git_status.png](git_status.png)
-![push_in_work.png](push_in_work.png)
+![git_status.png](images/git_status.png)
+![push_in_work.png](images/push_in_work.png)
 
 ## 5. Ajout du workflow
 
@@ -77,7 +77,7 @@ url: 'https://SeaniMoxxu.github.io',
 npm install --save-dev jest puppeteer
 ````
 
-![install_test.png](install_test.png)
+![install_test.png](images/install_test.png)
 
 -Création d'un fichier de configuration jest a la racine de diconausaurus
 
@@ -142,7 +142,7 @@ describe('Essential Pages', () => {
 
 7. Ajout des modifications a git et tests du site
 
-![state_of_git.png](state_of_git.png)
+![state_of_git.png](images/state_of_git.png)
 
 -Erreur lors du build
 
@@ -160,4 +160,4 @@ Error: Process completed with exit code 1.
 
 - Modification des fichier de configurations
 
-![christmas_tree.png](christmas_tree.png)
+![christmas_tree.png](images/christmas_tree.png)
