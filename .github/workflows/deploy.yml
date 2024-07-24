@@ -1,4 +1,4 @@
-name: Ajout de Docusaurus a la page github
+name: Ajout de Docusaurus à la page GitHub
 
 on:
   push:
@@ -16,15 +16,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
+
+      - name: Run tests
+        run: npm test
 
       - name: Build Docusaurus site
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
